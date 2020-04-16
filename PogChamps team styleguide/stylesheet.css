@@ -1,0 +1,192 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars" "lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars" "nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar" ". . . . . . . . . . ." ". . . . models models models . . . ." "display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models" "display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models" ". . . . . . . . . . ." ". . . . loans loans loans . . . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . . . . . . . . . ." ". . . . media media media . . . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . . . . . . . . . ." ". . . . text_variants text_variants text_variants . . . ." ". . variants variants variants variants variants variants variants . ." ". . variants variants variants variants variants variants variants . ." ". . variants variants variants variants variants variants variants . ." ". . . . . . . . . . ." ". . . . links links links . . . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . . . . . . . . . ." ". . . . Lists Lists Lists . . . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . . . . . . . . . ." "footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.lings_cars {
+	grid-area: lings_cars;
+}
+
+.serif {
+	font-family: "Garamond", Garamond, serif;
+}
+
+.nav_bar {
+	grid-area: nav_bar;
+}
+
+.models {
+	grid-area: models;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.display_models {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "toyota masda nissan" "subaru mitsubishi honda";
+	grid-area: display_models;
+}
+
+.toyota {
+	grid-area: toyota;
+	object-fit: fill;
+}
+
+.masda {
+	grid-area: masda;
+}
+
+.nissan {
+	grid-area: nissan;
+}
+
+.subaru {
+	grid-area: subaru;
+}
+
+.mitsubishi {
+	grid-area: mitsubishi;
+}
+
+.honda {
+	grid-area: honda;
+}
+
+.loans {
+	grid-area: loans;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.loan_info {
+	grid-area: loan_info;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.media {
+	grid-area: media;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.media_info {
+	grid-area: media_info;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.text_variants {
+	grid-area: text_variants;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.variants {
+	grid-area: variants;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.links {
+	grid-area: links;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.link_info {
+	grid-area: link_info;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.Lists {
+	grid-area: Lists;
+	text-align: center;
+}
+
+.List_types {
+	grid-area: List_types;
+	align-items: center;
+	text-align: center;
+	list-style-position: inside;
+}
+
+.color {
+	align-items: center;
+	text-align: center;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
+/*this has no function*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+	font-family: "Segoe UI";
+	color: #b3b3b3;
+}
+
+.nav_bar nav {
+	width: 100%;
+	background-color: #00316b;
+}
+
+.nav_bar ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav_bar ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+.nav_bar ul li:hover {
+	background-color: #e91e63;
+}
+
+.nav_bar ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:visited,
+.opened_link {
+	color: #33d6ff;
+}
+
+#copyright {
+	position: relative;
+	padding: 3em 0em;
+	text-align: center;
+	color: #737373;
+	background-color: #00316b;
+}
+
+#copyright .container {}
+
+#copyright a {
+	text-decoration: none;
+	color: white;
+}
