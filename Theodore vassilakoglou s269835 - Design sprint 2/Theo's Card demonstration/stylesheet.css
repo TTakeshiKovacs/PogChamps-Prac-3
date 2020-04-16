@@ -1,0 +1,316 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars" "lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars" "nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar" ". . . . . . . . . . ." ". . . . models models models . . . ." "display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models" "display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models" ". . . . . . . . . . ." ". . . . loans loans loans . . . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . . . . . . . . . ." ". . . . media media media . . . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . . . . . . . . . ." ". . . . text_variants text_variants text_variants . . . ." ". . variants variants variants variants variants variants variants . ." ". . variants variants variants variants variants variants variants . ." ". . variants variants variants variants variants variants variants . ." ". . . . . . . . . . ." ". . . . links links links . . . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . . . . . . . . . ." ". . . . Lists Lists Lists . . . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . . . . . . . . . ." ". . . . colours colours colours . . . ." ". . . . color-box color-box color-box . . . ." ". . . . color-box color-box color-box . . . ." ". . . . bottom bottom bottom . . . ." ". . . . . . . . . . ." "footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+
+.lings_cars { grid-area: lings_cars; }
+
+.serif {
+  font-family: "Garamond", Garamond, serif;
+}
+
+
+.nav_bar { grid-area: nav_bar; }
+
+.models { grid-area: models;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%; }
+
+.display_models {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "toyota masda nissan" "subaru mitsubishi honda";
+  grid-area: display_models;
+}
+
+.toyota { grid-area: toyota;
+object-fit:fill;}
+
+.masda { grid-area: masda; }
+
+.nissan { grid-area: nissan; }
+
+.subaru { grid-area: subaru; }
+
+.mitsubishi { grid-area: mitsubishi; }
+
+.honda { grid-area: honda; }
+
+.loans { grid-area: loans;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%; }
+
+.loan_info { grid-area: loan_info;
+  margin-right: 20%;
+  margin-left: 20%;}
+
+.media { grid-area: media;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%; }
+
+.media_info { grid-area: media_info;
+  margin-right: 20%;
+  margin-left: 20%;}
+
+.text_variants { grid-area: text_variants;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%; }
+
+.variants { grid-area: variants;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;}
+
+.links { grid-area: links;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%; }
+
+.link_info { grid-area: link_info;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%; }
+
+
+.Lists { grid-area: Lists;
+  text-align: center; }
+
+.List_types { grid-area: List_types;
+  align-items: center;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.colours { grid-area: colours; }
+
+.color-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . . ." ". . . .";
+  grid-area: color-box;
+}
+
+.bottom { grid-area: bottom; }
+
+.footer { grid-area: footer; }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    font-family: "Segoe UI";
+    color:  #b3b3b3;
+}
+
+.nav_bar nav {
+    width: 100%;
+    background-color: #00316b;
+}
+
+.nav_bar ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav_bar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav_bar ul li:hover {
+    background-color: #e91e63;
+}
+
+.nav_bar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited, .opened_link {
+	color: #33d6ff;
+}
+
+
+.ling
+{
+  margin-left: 25%;
+  align-items: center;
+  width: 320px;
+padding: 20px;}
+
+
+#copyright
+{
+  position: relative;
+  padding: 3em 0em;
+  text-align: center;
+  color: #737373;
+  background-color: #00316b;
+}
+
+#copyright .container
+{
+}
+
+#copyright a
+{
+  text-decoration: none;
+  color: white;
+}
+
+
+.outer {
+  box-sizing: border-box;
+}
+
+.outer {
+  font-family: 'Fira Sans',sans-serif;
+  line-height: 1.6;
+  min-height: 50px;
+  place-items: center;
+}
+
+
+.card
+{
+  box-shadow: 0 0 20pc
+  rgba(0, 0, 0, 0.2);
+  width: 150%;
+  max-width: 990px;
+  flex-direction: column;
+  background-color: #005e9b;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.profile-name{
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: 1px;}
+
+
+.profile-name::after{
+  content:'';
+  display: block;
+  height: 1px;
+  width: 2em;
+  background: #fbcbf0;
+  margin: 0.7em auto 0.5em;
+  opacity: 0.35;
+}
+
+
+
+.profile-position{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 3px;
+  margin-bottom: 2em;
+  color: #5bcbf0;
+}
+
+.profile-body{
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.social-list
+{
+  display: flex;
+  justify-content: space-around;
+  list-style:none;
+  margin: 0;
+  padding:0;
+  width:150px;
+  margin: 0 auto;
+
+}
+
+.social-link{
+  color: #5bcbf0;
+  opacity: 0.5;
+  font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus{
+  opacity: 1
+
+}
+
+
+@media (min-width: 600px){
+  .card{
+    flex-direction:row;
+}
+
+/* CSS styling for flip card from w3schools url" https://www.w3schools.com/howto/howto_css_flip_card.asp */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+/*  height: 200px;*/
+  /*border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  /* position: relative;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+/*  height: 100%;*/
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  opacity: 0.8;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
